@@ -1,0 +1,186 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Noto Color Emoji', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+.mainheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dark{
+  color: black;
+}
+a{
+  position:relative;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black ;
+  transition: 0,5s;
+}
+a::before{
+  position: absolute;
+  top: -2px;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color:brown;
+  transition: 0,5s;
+
+}
+.logo{
+  color: brown;
+  font-size: xx-large;
+}
+a:hover:before{
+  width: 100%;
+}
+a:hover{
+  color:black;}
+
+table,
+td,
+th,
+tr {
+  border: none;
+}
+
+button {
+  appearance: none;
+}
+
+.link {
+  color:brown;
+}
+
+.button-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding: 0;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  transition: all .3s;
+  color: #414141;
+}
+
+.button-icon:hover {
+  cursor: pointer;
+  background-color: #E5E5E5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.main-table {
+  /* border: 1px solid; */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table thead {
+  text-align: left;
+}
+
+.main-table thead th {
+  padding: 16px 0;
+}
+
+.main-table thead tr {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.main-table tbody td {
+  padding: 42px 0;
+}
+
+.main-table tbody tr {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.product {
+  display: flex;
+}
+
+.product-row.liked .product-like {
+  color: rgba(255, 0, 0, 0.593);
+}
+
+.product img {
+  display: inline-block;
+  margin-right: 32px;
+  width: 160px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.product-details-name {
+  margin-top: 0
+}
+
+.product-counter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-counter {
+  border: 1px solid brown;
+}
+
+.product-counter button {
+  border: none ;
+  background: none;
+}
+
+.product-counter i {
+  color: #56B280;
+}
+
+.total-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  padding: 42px 0;
+}
+
+.total-container button {
+  border: none;
+  padding: 8px 20px;
+  background: brown;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+H3{
+  word-spacing: 2px;
+  padding: 10px;
+}
+.market{
+  color: brown;
+}
